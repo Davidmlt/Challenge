@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-encriptador.css">
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+        
+    </head>
+
+    <body>
+            <header>
+                <div class="logo">
+                    <h1><img class="imagen-logo" src="Logo.png" alt="Logo de alura"></h1>
+                </div>
+
+            </header>
+
+            <main>
+                <div class="lado-izquierdo">
+                    <textarea id="input-principal" cols="70" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+
+                <div class="lado-derecho">  
+
+                    <div class="caja-texto"></div>
+                        <img id="munieco" src="munieco.png" alt="Muñeco de alura">
+                        <h2 id="texto">Ningún mensaje fue encontrado</h2>
+                        <textarea  id="input-secundario" cols="70" rows="10" placeholder="Ingrese el texto que desees encriptar o desencriptar"></textarea>
+                        <button id="copiar" type="button" onclick="copiar()">Copiar</button>
+                    </div>
+                    
+                </div>
+
+                <div class="caja-info">
+                    <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon>
+                    <p id="informacion">Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class="caja-botonera">
+
+                    <div class="boton-iz">
+                        <button id="boton-encriptador" type="button" onclick="encriptar()">Encriptar!</button>
+                    </div>
+
+                    <div class="boton-der">
+                        <button id="boton-desencriptador" type="button" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+
+                </div>
+            </main>
+
+            <footer>
+                <p id="autor">David Mendez Liendo - 2023</p>
+            </footer>
+
+    </body>
+
+
+
+</html>
